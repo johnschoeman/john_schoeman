@@ -1,0 +1,12 @@
+<h1>Projects</h1>
+<ul>
+  <% @projects.each do |project|%>
+  <li>
+    <h3><%= project.title %></h3>
+    <a class="project-link" href="<%= project.link_url%>">Live Site</a>
+    <p>
+      <%= project.description %>
+    </p>
+  </li>
+  <% end %>
+</ul>
