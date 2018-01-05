@@ -10,7 +10,6 @@ class App < Sinatra::Base
   environment.append_path "public/javascripts"
 
   environment.js_compressor  = Uglifier.new(harmony: true)
-  environment.css_compressor = :scss
 
   get "/assets/*" do
     env["PATH_INFO"].sub!("/assets/", "")
