@@ -1,12 +1,8 @@
 require 'sinatra/base'
-require 'sinatra/reloader'
 require 'sprockets'
 require 'uglifier'
 
 class App < Sinatra::Base
-  configure :development do
-    register Sinatra::Reloader
-  end
 
   set :environment, Sprockets::Environment.new
 
