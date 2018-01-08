@@ -1,6 +1,7 @@
-title,link_url,date,description
-Product Hunt App,productjadt.com,01/07/2018, a cool site
-Ready Responder Alert,rra.com,01/07/2018,a cool iot itegration
-GraphQL Tutorials,graphql-tutorial.github,01/07/2018,a tutorial for graphql
-Spot Me App,spotme.com,01/07/2018,a react native application
-Mirror Prime Generator,mirrorprime.com,01/07/2018,a vanilla javascript animation of mirror primes
+title,github_url,site_url,date,description
+Product Hunt App,https://github.com/johnschoeman/product_hunt_app,https://productjadt.herokuapp.com/#/,01/07/2018,A Product Hunt clone.
+Ready Responder Alert,https://github.com/johnschoeman/ReadyResponderAlert,,01/07/2018,IoT alert indicator integration for Ready Responder.
+GraphQL Tutorial,https://github.com/johnschoeman/graphql-demo,,01/09/2018,A GraphQL tutorial where you will take an existing RESTful Rails/React application and convert it to be powered by GraphQL.
+Spot Me App,https://github.com/johnschoeman/spotme,http://www.spotmeapp.me/,01/07/2018,A parking spot market place for drivers.
+Mirror Prime Generator,https://github.com/johnschoeman/mirror-prime-tree,https://johnschoeman.github.io/mirror-prime-tree/,01/07/2018,Data visualization for tree constructed based off mirror-primes.
+FiCalc App,https://github.com/johnschoeman/ficalc-app,https://www.ficalcapp.com,05/22/2017,An application that calculates time to financial independence.
