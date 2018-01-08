@@ -1,12 +1,12 @@
 <div class="resume-title">
-<h1>Resume</h1>
-<a href="./john_schoeman_resume.pdf" id="download-resume" class="button">Download PDF</a>
+  <h1>Resume</h1>
+  <a href="./john_schoeman_resume.pdf" id="download-resume" class="button" target="_blank">Download PDF</a>
 </div>
 
 <div class="resume">
 <div class="col-1">
-  <h3>Skills</h3>
-  <ul>
+  <h2>Skills</h2>
+  <ul class="skills-list">
     <li>Ruby</li>
     <li>RSpec</li>
     <li>TDD</li>
@@ -26,13 +26,15 @@
   </ul>
 </div>
 <div class="col-2">
-  <h3>Projects</h3>
-<ul>
+  <h2>Projects</h2>
+<ul class="project-list">
   <li>
-    <h4>Product​ ​Hunt​ ​App</h4>
+    <div class="project-title">
+      <h3><a href="productjadt.herokuapp.com" target="_blank">Product​ ​Hunt​ ​App</a></h3>
+      <h4><a href="productjadt.herokuapp.com" target="_blank">Live Site</a> | <a href="github.com/johnschoeman/product_hunt_app" target="_blank">Github</a></h4>
+    </div>
     <p>A single page application built on Rails using React.js and Redux<p>
-    <p>Live Site: productjadt.herokuapp.com | Github: github.com/johnschoeman/product_hunt_app</p>
-    <ul>
+    <ul class="resume-list">
       <li>
         Implemented state denormalization in the Rails ORM to cache aggregate relational data, eliminating N + 1 queries and increasing asynchronous http request response cycle speed by 50%.
       </li>
@@ -45,10 +47,12 @@
     </ul>
   </li>
   <li>
-    <h4>Spot​ ​Me</h4>
+    <div class="project-title">
+      <h3><a href="https://aldahir15.github.io/SpotMeApp/" target="_blank">Spot​ ​Me</a></h3>
+      <h4><a href="https://aldahir15.github.io/SpotMeApp/" target="_blank">Live Site</a> | <a href="github.com/johnschoeman/spotme" target="_blank">Github</a></h4>
+    </div>
     <p>A native mobile application built with React Native, Apollo Client, GraphQL, and Rails</p>
-    <p>Live Site: https://aldahir15.github.io/SpotMeApp/ | Github: github.com/johnschoeman/spotme</p>
-    <ul>
+    <ul class="resume-list">
       <li>
         Created and managed an abstracted data layer for the application backend by creating a GraphQL server built with ruby.
       </li>
@@ -61,15 +65,17 @@
     </ul>
   </li>
   <li>
-    <h4>Mirror​ ​Prime​ ​Tree​ ​Visualizer</h4>
+    <div class="project-title">
+      <h3><a href="johnschoeman.github.io/mirror-prime-tree/" target="_blank">Mirror​ ​Prime​ ​Tree​ ​Visualizer</a></h3>
+      <h4><a href="johnschoeman.github.io/mirror-prime-tree/" target="_blank">Live Site</a> | <a href="github.com/johnschoeman/mirror-prime-tree" target="_blank">Github</a></h4>
+    </div>
     <p>A number theory based data visualizer built with JavaScript<p>
-    <p>Live Site: johnschoeman.github.io/mirror-prime-tree/ | Github: github.com/johnschoeman/mirror-prime-tree</p>
-    <ul>
+    <ul class="resume-list">
       <li>
-        Devised and implemented an original algorithm which generates tree data structures to visualize relationships between prime numbers. Achieved fast rendering of data by utilizing memoization, functional programming, weak mapping
+        Devised and implemented an original algorithm which generates tree data structures to visualize relationships between prime numbers.
       </li>
       <li>
-        and recursion to reduce computational intensity and improve time complexity.
+        Achieved fast rendering of data by utilizing memoization, functional programming, weak mapping and recursion to reduce computational intensity and improve time complexity.
       </li>
       <li>
         Took advantage of the Event Loop to optimize concurrent animations together into a single reflow and repaint cycle, leading to higher fidelity animation.
@@ -77,23 +83,52 @@
     </ul>
   </li>
 </ul>
-<h3>Experience</h3>
-Structural​ ​Engineer
-DeSimone Consulting Engineering (a 200 person structural engineering firm) Sept 2014 - July 2017
-Lionakis (a 200 personal architectural firm with structural design services) Jan 2014 - Sept 2014
-● Created software programs used by other engineers to automate the design of long-span structural
-members and high-strength ductile connections compliant with the the California Building Code
-structural design specifications.
-● Updated and optimized engineering legacy software used by a 200 person structural engineering
-firm to produce and analyze wind design loads for high rise construction.
-● Responsible for structural design solutions and analysis used to produce construction documents for
-building structural systems for the hospitality and commercial construction markets.
-<h3>Education</h3>
-App​ ​Academy​ ​ ​ ​(Spring​ ​2017)
-Immersive software development course with focus on full stack web development
-● Rigorous program that accepts < 3% of all applicants
-California​ ​Polytechnic​ ​University​ ​@​ ​San​ ​Luis​ ​Obispo​ ​ ​ ​(Spring​ ​2013)
-BS - Architectural Engineering, Minor - Mathematics, cum laude
-● Top Ranked Architectural Engineering Program
+<h2>Experience</h2>
+<ul class="experience-list">
+<div class="experience-title">
+  <h3>Structural Engineer</h3>
+  <p>Sept 2014 - July 2017</p>
+</div>
+<p>DeSimone Consulting Engineering - a 200 person structural engineering firm</p> 
+<ul class="resume-list">
+  <li>
+    Created software programs used by other engineers to automate the design of long-span structural members and high-strength ductile connections compliant with the the California Building Code structural design specifications.
+  </li>
+  <li>
+    Updated and optimized engineering legacy software used by a 200 person structural engineeringfirm to produce and analyze wind design loads for high rise construction.
+  </li>
+  <li>
+    Responsible for structural design solutions and analysis used to produce construction documents for building structural systems for the hospitality and commercial construction markets.
+  </li>
+</ul>
+<div class="experience-title">
+  <h3>Project Engineer</h3>
+  <p>Jan 2014 - Sept 2014</p>
+</div>
+<p>Lionakis - a 200 personal architectural firm with structural design services</p>
+<ul class="resume-list">
+  <li>
+    Responsible for structural design solutions and analysis used to produce construction documents for building structural systems for the hospitality and commercial construction markets.
+  </li>
+</ul>
+<h2>Education</h2>
+  <ul class="education-list">
+    <li>
+      <div class="education-title">
+        <h3>App​ ​Academy​ - San Francisco</h3>
+        <p>Spring​ ​2017</p>
+      </div>
+      <p>Immersive software development course with focus on full stack web development<p>
+      <p>Rigorous program that accepts < 3% of all applicants</p>
+    </li>
+    <li>
+      <div class="education-title">
+        <h3>California​ ​Polytechnic​ ​University​ ​@​ ​San​ ​Luis​ ​Obispo​</h3>
+        <p>Spring​ ​2013</p>
+      </div>
+      <p>BS - Architectural Engineering, Minor - Mathematics, cum laude</p>
+      <p>Top Ranked Architectural Engineering Program</p>
+    </li>
+  </ul>
 </div>
 </div>
