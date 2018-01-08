@@ -1,0 +1,39 @@
+@import 'variables';
+
+.resume {
+  display: flex;
+  flex-direction: row;
+
+  .col-1 {
+    width: 25%;
+  }
+  
+  .col-2 {
+    width: 75%;
+  }
+}
+
+.resume-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#download-resume {
+  float: right;
+}
+
+@media all and (max-width: 600px) {
+  .resume {
+    flex-direction: column;
+
+    .col-1 {
+      width: 100%
+    }
+
+    .col-2 {
+      width: 100%
+    }
+  }
+}

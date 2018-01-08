@@ -39,6 +39,20 @@ p {
 	font-size: 14px;
 }
 
+a.button {
+	border: 1px solid $primary;
+	border-radius: 3px;
+	font-weight: bold;
+	padding: 5px;
+	transition: 0.5s;
+	height: 15px;
+}
+
+a.button:hover {
+	color: $background;
+	background-color: $primary;
+}
+
 @media all and (max-width: 600px) {
   .app-content {
 		width: 90%;

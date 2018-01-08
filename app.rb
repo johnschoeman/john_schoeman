@@ -37,6 +37,10 @@ class App < Sinatra::Base
     end
   end
 
+  get '/john_schoeman_resume.pdf' do
+    send_file('john_schoeman_resume.pdf')
+  end
+
   get '*' do
     erb :index, :layout => false do
       erb :about
