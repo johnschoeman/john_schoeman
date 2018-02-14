@@ -1,8 +1,9 @@
 @import 'variables';
 
 footer {
-  padding-top: 15px;
-  border-top: 1px solid $secondary;
+  height: 100px;
+  padding-top: 36px;
+  border-top: 3px solid $secondary;
 }
 
 .footer-container {
@@ -21,10 +22,9 @@ footer {
 
 .social-media-list {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: left;
-  width: 128px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-media-item {
@@ -33,7 +33,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 10px;
-  width: 128px;
+  width: 42px;
 
   color: $link;
   :visited {

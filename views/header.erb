@@ -2,9 +2,10 @@
   <div class="header-container">
     <nav class="site-nav">
       <div class="site-nav-list">
-        <a class="page-link" href="/projects">Projects</a>
-        <a class="page-link" href="/about">About</a>
-        <a class="page-link" href="/resume">Resume</a>
+        <a class="page-link <%= "active" if request.path_info == "/about" %>" href="/about">About</a>
+        <a class="page-link <%= "active" if request.path_info == "/projects" %>" href="/projects">Projects</a>
+        <a class="page-link <%= "active" if request.path_info == "/posts" %>" href="/posts">Posts</a>
+        <a class="page-link <%= "active" if request.path_info == "/resume" %>" href="/resume">Resume</a>
       </div>
     </nav>
     <div id="dropdown" class="hidden">
@@ -15,8 +16,9 @@
       </span>
 
       <ul id="menulist" class="menulist">
-        <li><a class="menuitems" href="/projects">Projects</a></li>		
         <li><a class="menuitems" href="/about">About</a></li>				
+        <li><a class="menuitems" href="/projects">Projects</a></li>		
+        <li><a class="menuitems" href="/posts">Posts</a></li>
         <li><a class="menuitems" href="/resume">Resume</a></li>
       </ul>			
     </div>
