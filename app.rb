@@ -5,6 +5,7 @@ require 'uglifier'
 require 'sass'
 
 require_relative 'models/project'
+require_relative 'models/post'
 
 class App < Sinatra::Base
   configure :development do
@@ -28,6 +29,21 @@ class App < Sinatra::Base
     @projects = Project.all
     erb :index, :layout => false do
       erb :projects
+    end
+  end
+
+  get '/posts/:post_name' do
+    post = params['post_name']
+    post_path = "views/posts/#{post}.erb"
+    erb :index, :layout => false do
+      File.exist?(post_path) ? (erb post.to_sym, views: 'views/posts') : (erb :not_found)
+    end
+  end
+
+  get '/posts' do
+    @posts = Post.all
+    erb :index, :layout => false do
+      erb :posts
     end
   end
 

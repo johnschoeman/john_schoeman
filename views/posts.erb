@@ -1,0 +1,15 @@
+<h1>Posts</h1>
+<div id="posts">
+<ul>
+  <% @posts.each do |post| %>
+    <li class="post-item">
+    <span class="post-date"><%= post.date %></span>
+    <br/>
+    <div class="post-header">
+      <a class="post-title" href="/posts/<%= post.href %>"><%= post.title %></a>
+    </div>
+    <p><%= post.description %></p>
+    </li>
+  <% end %>
+</ul>
+</div>
