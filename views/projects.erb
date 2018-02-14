@@ -3,18 +3,29 @@
 <ul>
   <% @projects.each do |project|%>
   <li class="project-item">
-    <span class="project-date"><%= project.date %></span>
-    <br/>
-    <div class="project-header">
-      <a class="project-title" href="<%= project.github_url %>" target="_blank"><%= project.title %></a>
-      <div class="project-links">
-      <a class="github-link" href="<%= project.github_url %>" target="_blank">Github</a>
-      <% if project.site_url %>
-        <span> | </span><a href="<%= project.site_url %>" class="site-link" target="_blank">Live Site</a>
-      <% end %>
+    <div class="content">
+
+      <div class="project-header">
+        <a class="project-title" href="<%= project.github_url %>" target="_blank"><%= project.title %></a>
+        <div class="project-links">
+        <% if project.site_url %>
+          <a href="<%= project.site_url %>" class="site-link" target="_blank">Live Site</a><div class="divider" ></div>
+        <% end %>
+        <a class="github-link" href="<%= project.github_url %>" target="_blank">Github</a>
+        </div>
       </div>
+
+      <div class="project-date"><%= project.date %></div>
+
+      <p class="project-description"><%= project.description %></p>
+
+      <div class="project-skills">
+        <% project.skills.each do |skill| %>
+          <div class="project-skill"><%= skill %></div>
+        <% end %>
+      </div>
+
     </div>
-    <p><%= project.description %></p>
   </li>
   <% end %>
 </ul>

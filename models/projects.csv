@@ -1,7 +1,7 @@
-title,github_url,site_url,date,description
-Product Hunt App,https://github.com/johnschoeman/product_hunt_app,https://productjadt.herokuapp.com/#/,01/07/2018,A Product Hunt clone.
-Ready Responder Alert,https://github.com/johnschoeman/ReadyResponderAlert,,01/07/2018,IoT alert indicator integration for Ready Responder.
-GraphQL Tutorial,https://github.com/johnschoeman/graphql-demo,,01/09/2018,A GraphQL tutorial where you will take an existing RESTful Rails/React application and convert it to be powered by GraphQL.
-Spot Me App,https://github.com/johnschoeman/spotme,http://www.spotmeapp.me/,01/07/2018,A parking spot market place for drivers.
-Mirror Prime Generator,https://github.com/johnschoeman/mirror-prime-tree,https://johnschoeman.github.io/mirror-prime-tree/,01/07/2018,Data visualization for tree constructed based off mirror-primes.
-FiCalc App,https://github.com/johnschoeman/ficalc-app,https://www.ficalcapp.com,05/22/2017,An application that calculates time to financial independence.
+date,title,github_url,site_url,description,skills
+2017,Product Hunt App,https://github.com/johnschoeman/product_hunt_app,https://productjadt.herokuapp.com/#/,"A pixel perfect fullstack implementation of the popular website producthunt.com. The application allows users to upload, discover, like, and discuss interesting projects.",Ruby--Rails--JavaScript--React--Redux
+2018,Ready Responder Indicator,https://github.com/johnschoeman/ReadyResponderIndicator,,"An open source contribution to Ready Responder, an applicaiton used by first reponders in the greater Boston area.  The project provides an IoT integration to the existing appliation allowing connected devices to notifiy end users if an organized event is properly staffed.",Ruby--Rails--IoT
+2018,GraphQL Tutorial,https://github.com/johnschoeman/graphql-demo,,"A GraphQL tutorial where you will take an existing RESTful Rails/React application and convert it to be powered by GraphQL.",GraphQL--Rails--React--APIs
+2017,Spot Me App,https://github.com/johnschoeman/spotme,http://www.spotmeapp.me/,"A parking spot market place for drivers.  Spot me is a fullstack mobile application that allows end users to rent and reserve parking spaces.",React-Native--Expo--Rails--GraphQL--Apollo Client
+2017,Mirror Prime Generator,https://github.com/johnschoeman/mirror-prime-tree,https://johnschoeman.github.io/mirror-prime-tree/,"Data visualization for a number theory inspired algorithm.  Using vanillia JavaScript, recursion, breadth first searching, and dynamic programming, users can explore beautiful mathematical constructs.",JavaScript
+2017,FiCalc App,https://github.com/johnschoeman/ficalc-app,https://www.ficalcapp.com,"An application that calculates time to financial independence.",HTML--CSS--JavaScript
