@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuItems = document.getElementsByClassName("menuitems");
   const menuButton = document.getElementById("menubtn");
 
-  const menuHeight = "225px" //Todo make this calculate from the size of the list items
-  const dropdownStartHeight = "80px"
-  //default to measure if/else from
-  dropdown.style.height = dropdownStartHeight
+  const dropdownOpenHeight = `${menuItems.length * 60}px`
+  const dropdownClosedHeight = "80px"
+
+  dropdown.style.height = dropdownClosedHeight
   for (let i = 0; i < menuItems.length; i++){
     menuItems[i].style.marginBottom="100px";
   };
@@ -22,17 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
    navToggle = () => {	
-    //to menuButton
-    if (dropdown.style.height <= menuHeight) {
-      dropdown.style.height = dropdownStartHeight;
+    if (dropdown.style.height <= dropdownOpenHeight) {
+      dropdown.style.height = dropdownClosedHeight;
       
       for (let i = 0; i < menuItems.length; i++){
         menuItems[i].style.marginBottom="100px";
         menuItems[i].style.opacity="0.0";
       };
       document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
-    } else if (dropdown.style.height <= dropdownStartHeight) {
-      dropdown.style.height = menuHeight;
+    } else if (dropdown.style.height <= dropdownClosedHeight) {
+      dropdown.style.height = dropdownOpenHeight;
       
       for (let i = 0; i < menuItems.length; i++){
         menuItems[i].style.opacity="1.0";
