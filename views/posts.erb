@@ -3,12 +3,21 @@
 <ul>
   <% @posts.each do |post| %>
     <li class="post-item">
-    <span class="post-date"><%= post.date %></span>
-    <br/>
-    <div class="post-header">
-      <a class="post-title" href="/posts/<%= post.href %>"><%= post.title %></a>
+    <div class="post-content">
+      <div class="post-header">
+        <a class="post-title" href="/posts/<%= post.href %>"><%= post.title %></a>
+      </div>
+
+      <div class="post-date"><%= post.date %></div>
+
+      <p class="post-description"><%= post.description %></p>
+
+      <div class="post-tags">
+        <% post.tags.each do |tag| %>
+          <div class="post-tag"><%= tag %></div>
+        <% end %>
+      </div>
     </div>
-    <p><%= post.description %></p>
     </li>
   <% end %>
 </ul>

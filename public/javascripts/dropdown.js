@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuItems = document.getElementsByClassName("menuitems");
   const menuButton = document.getElementById("menubtn");
 
-  const menuHeight = "185px" //Todo make this calculate from the size of the list items
+  const menuHeight = "225px" //Todo make this calculate from the size of the list items
   const dropdownStartHeight = "80px"
   //default to measure if/else from
   dropdown.style.height = dropdownStartHeight
