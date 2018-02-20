@@ -6,7 +6,7 @@ header {
   height: 80px;
   overflow-y: auto;
   background-color: $background;
-  z-index: 100;
+  z-index: 2;
   border-bottom: 3px solid $secondary;
 }
 
@@ -28,7 +28,7 @@ header {
 a.logo {
   color: $primary-text;
   position: relative;
-  z-index: 100;
+  z-index: 4;
   margin: 5px 0;
   font-size: 36px;
 }
@@ -72,7 +72,7 @@ a.logo {
 #dropdown {
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: $background;
@@ -90,6 +90,10 @@ a.logo {
   width: 200px;
 }
 
+.menulist.active {
+  z-index: 3;
+}
+
 .menulist > li:first-child {
   margin-top: 15px;
 }
@@ -103,7 +107,7 @@ a.logo {
   left: 25px;
   font-size: 36px !important;
   margin-right: 10px;
-  z-index:100;
+  z-index: 3;
   color: $background;
   cursor:pointer;
   transition: background-position .3s;
