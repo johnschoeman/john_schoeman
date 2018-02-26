@@ -1,3 +1,56 @@
+@import 'variables';
+
 .about-container {
   margin: 56px 0;
+}
+
+#email-container {
+
+  #email-sender-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px 0;
+  }
+
+  .email-input {
+    box-sizing: border-box;
+    width: 49%;
+    margin: 12px 0 0 0;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    transition: 0.5s;
+
+    &:focus {
+      border: 1px solid $secondary;
+    }
+  }
+
+  textarea#styled {
+    box-sizing: border-box;
+    margin: 12px 0;
+    width: 100%;
+    height: 120px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 12px;
+    transition: 0.5s;
+
+    &:focus {
+      border: 1px solid $secondary;
+    }
+  }
+}
+
+@media all and (max-width: $max-width) {
+  #email-container {
+    #email-sender-info {
+      flex-direction: column;
+    }
+
+    .email-input {
+      width: 100%;
+    }
+  }
 }

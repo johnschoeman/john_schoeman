@@ -12,6 +12,16 @@
   </p>
 </div>
 
-<br/>
-<br/>
-<br/>
+<div id="email-container">
+  <h2>Get In Touch</h2>
+  <form name="email-form" action="/contact" method="post">
+    <div id="email-sender-info">
+      <input class="email-input" type="text" name="name" placeholder="Your Name" value="<%= h @name %>" required>
+      <input class="email-input" type="email" name="email" placeholder="Your Email" value="<%= h @email %>" required>
+    </div>
+    <textarea id="styled" name="message" placeholder="Your Message" required><%= h @message %></textarea>
+    <input class="hidden" name="honeypot">
+    <div class="g-recaptcha" data-sitekey="6LfkNkgUAAAAAIYwgXN9yzb8pdDXxz158aKs0WC5"></div>
+    <input class="button" type="submit" value="Send">
+  </form>
+</div>
