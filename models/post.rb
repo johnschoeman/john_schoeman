@@ -1,20 +1,13 @@
-require 'csv'
+require_relative './application_record'
 
-class Post
+class Post < ApplicationRecord
   attr_accessor :date, :href, :title, :description, :tags
   
-  def initialize(date, href, title, description, tags)
-    @date = date
-    @href = href
-    @title = title
-    @description = description
-    @tags = tags.split('--')
-  end
-
-  def self.all
-    file = File.expand_path("../posts.csv", __FILE__)
-    data = CSV.read(file, { encoding: "UTF-8", headers: true, header_converters: :symbol, converters: :all })
-    hashed_data = data.map { |row| row.to_hash }
-    hashed_data.map { |row| new(row[:date], row[:href], row[:title], row[:description], row[:tags]) }
+  def initialize(params)
+    @date = params[:date]
+    @href = params[:href]
+    @title = params[:title]
+    @description = params[:description]
+    @tags = params[:tags].split('--')
   end
 end

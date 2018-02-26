@@ -1,21 +1,14 @@
-require 'csv'
+require_relative './application_record'
 
-class Project
+class Project < ApplicationRecord
   attr_accessor :title, :github_url, :site_url, :date, :description, :skills
   
-  def initialize(title, github_url, site_url, date, description, skills)
-    @title = title
-    @github_url = github_url
-    @site_url = site_url
-    @date = date
-    @description = description
-    @skills = skills.split('--')
-  end
-
-  def self.all
-    file = File.expand_path("../projects.csv", __FILE__)
-    data = CSV.read(file, { encoding: "UTF-8", headers: true, header_converters: :symbol, converters: :all })
-    hashed_data = data.map { |row| row.to_hash }
-    hashed_data.map { |row| new(row[:title], row[:github_url], row[:site_url], row[:date], row[:description], row[:skills]) }
+  def initialize(params)
+    @title = params[:title]
+    @github_url = params[:github_url]
+    @site_url = params[:site_url]
+    @date = params[:date]
+    @description = params[:description]
+    @skills = params[:skills].split('--')
   end
 end
