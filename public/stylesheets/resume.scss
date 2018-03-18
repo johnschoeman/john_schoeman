@@ -25,13 +25,14 @@
 
     .section-header {
       width: 15%;
+      min-width: 110px;
+      padding-right: 16px;
 
       h2 {
         margin-top: 36px;
         border-bottom: 1px solid $secondary;
         width: 100%;
-        text-align: right;
-        float: right;
+        direction: rtl;
       }
     }
 
@@ -91,6 +92,13 @@
   .resume {
     .section {
       flex-direction: column;
+      
+      .section-header {
+        h2 {
+          direction: ltr;
+          margin-left: -12px;
+        }
+      }
     }
   }
 }
